@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Введите первое число (a):");
+        int a = scanner.nextInt();
+
+        System.out.println("Введите второе число (b):");
+        int b = scanner.nextInt();
+
+        // Сравнение чисел a и b
+        if (a > b) {
+            System.out.println("a > b");
+        } else if (a < b) {
+            System.out.println("a < b");
+        } else {
+            System.out.println("a = b");
+        }
+
+        // Операции над числами a и b
+        System.out.println("a + b = " + (a + b));
+        System.out.println("a - b = " + (a - b));
+        if (b != 0) {
+            System.out.println("a / b = " + ((double) a / b));
+        } else {
+            System.out.println("На ноль делить низя.");
+        }
+        System.out.println("a * b = " + (a * b));
+    }
+}
